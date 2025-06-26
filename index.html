@@ -3,128 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Christian – Tech Support & Web3 Support Enthusiast</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <title>Christian | Tech & Customer Support Specialist</title>
   <style>
+    :root {
+      --primary: #1e90ff;
+      --background: #f9f9f9;
+      --text: #333;
+      --accent: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f9fafb;
-      color: #1e293b;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
     }
+
     header {
-      background: linear-gradient(90deg, #3b82f6, #6366f1);
-      color: white;
-      text-align: center;
-      padding: 100px 20px 60px;
-      font-family: 'Poppins', sans-serif;
-    }
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2em;
-      opacity: 0.9;
-    }
-    .section {
-      max-width: 1000px;
-      margin: auto;
+      background: linear-gradient(135deg, var(--primary), #0077cc);
+      color: var(--accent);
       padding: 60px 20px;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 0.6s ease forwards;
+      text-align: center;
     }
-    .section:nth-child(2) { animation-delay: 0.2s; }
-    .section:nth-child(3) { animation-delay: 0.4s; }
-    .section:nth-child(4) { animation-delay: 0.6s; }
-    .section h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #3b82f6;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
-    .section ul {
-      list-style: none;
-      padding: 0;
-    }
-    .section li {
+
+    header h1 {
+      font-size: 2.5rem;
       margin-bottom: 10px;
-      font-size: 1.05em;
     }
-    .section li i {
-      color: #3b82f6;
-      margin-right: 10px;
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
     }
-    .cta {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 28px;
-      background: #3b82f6;
-      color: white;
-      border-radius: 6px;
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 24px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "✅";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+    }
+
+    a {
+      color: var(--primary);
       text-decoration: none;
-      font-weight: 600;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
       transition: background 0.3s ease;
     }
-    .cta:hover {
-      background: #2563eb;
+
+    .btn:hover {
+      background-color: #005fa3;
     }
+
     footer {
       text-align: center;
       padding: 30px 20px;
-      background: #f1f5f9;
-      color: #64748b;
       font-size: 0.9em;
-    }
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      color: #777;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Christian</h1>
-  <p>Tech Support • Customer Support • Crypto-Enthusiast Mindset</p>
-</header>
+  <header>
+    <h1>Hi, I’m Christian</h1>
+    <p>A remote-first <strong>Tech & Customer Support Specialist</strong> helping SaaS and Web3 teams thrive through clear communication and technical precision.</p>
+    <p><em>Empathetic. Detail-oriented. Ready to support your users — wherever they are.</em></p>
+  </header>
 
-<div class="section">
-  <h2>About Me</h2>
-  <p>I’m a tech support and customer service pro who thrives on solving problems, keeping users happy, and staying ahead of the curve—especially in fast-moving Web3 teams. Whether it’s DNS issues or onboarding friction, I’ve got it handled with professionalism and clarity.</p>
-</div>
+  <section id="skills">
+    <h2>Skills & Tools</h2>
+    <ul>
+      <li>Technical Troubleshooting & Remote Diagnostics</li>
+      <li>Ticketing Systems (Zendesk, Freshdesk, Intercom)</li>
+      <li>Email Infrastructure (DNS, SPF, DKIM, DMARC)</li>
+      <li>Documentation & Knowledge Base Creation</li>
+      <li>Empathetic Client Communication & Resolution</li>
+      <li>Remote-First Support across Multiple Time Zones</li>
+    </ul>
+  </section>
 
-<div class="section">
-  <h2>Skills</h2>
-  <ul>
-    <li><i class="fas fa-envelope"></i> Email & DNS Troubleshooting (SPF, DKIM, DMARC)</li>
-    <li><i class="fas fa-comment-dots"></i> Customer Support via Email, Chat & Tickets</li>
-    <li><i class="fas fa-file-alt"></i> Writing Docs, Reporting & Knowledge Base Creation</li>
-    <li><i class="fas fa-globe"></i> Remote Tools: Slack, Loom, Google Workspace</li>
-    <li><i class="fas fa-bitcoin"></i> Crypto-Curious & Web3-Friendly</li>
-  </ul>
-</div>
+  <section id="contact">
+    <h2>Let’s Work Together</h2>
+    <p>📩 Open to remote support roles in SaaS, Web3, or early-stage startups.</p>
+    <p>Reach out via 
+      <a href="mailto:your@email.com">Email</a>, 
+      <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>, or 
+      <a href="https://github.com/channie04" target="_blank">GitHub</a>.
+    </p>
+    <a href="Christian-Resume.pdf" download class="btn">📄 Download My Résumé</a>
+  </section>
 
-<div class="section">
-  <h2>Experience</h2>
-  <p><strong>CheapInboxes – Tech Support & Customer Support Specialist</strong><br/>
-  Delivered written customer support for technical issues, improved domain and email performance, and collaborated cross-functionally to build repeatable processes.</p>
-</div>
-
-<div class="section">
-  <h2>Let’s Connect</h2>
-  <p>If your team needs someone who blends technical detail with human support, I’d love to chat. I’m looking for remote opportunities where support is a key part of product success—especially in Web3-forward teams.</p>
-  <a href="mailto:castanoschristian3@gmail.com" class="cta">Email Me</a>
-</div>
-
-<footer>
-  &copy; 2025 Christian. Built with curiosity, clarity, and commitment.
-</footer>
+  <footer>
+    &copy; 2025 Christian. Built with ❤️ and GitHub Pages.
+  </footer>
 
 </body>
 </html>
