@@ -6,127 +6,187 @@
   <title>Christian | Tech & Customer Support Specialist</title>
   <style>
     :root {
-      --primary: #1e90ff;
-      --background: #f9f9f9;
-      --text: #333;
-      --accent: #ffffff;
+      --bg: #0f172a;
+      --text: #f1f5f9;
+      --accent: #38bdf8;
+      --muted: #94a3b8;
+      --card: #1e293b;
     }
 
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: var(--background);
+      background-color: var(--bg);
       color: var(--text);
       line-height: 1.6;
     }
 
-    header {
-      background: linear-gradient(135deg, var(--primary), #0077cc);
-      color: var(--accent);
-      padding: 60px 20px;
+    nav {
+      background-color: #0f172a;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       text-align: center;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    nav a {
+      color: var(--text);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 60px;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+      font-size: 2.8rem;
+      margin-bottom: 20px;
     }
 
     header p {
       font-size: 1.2rem;
+      color: var(--muted);
       max-width: 700px;
       margin: 0 auto;
     }
 
+    .cta {
+      margin-top: 30px;
+    }
+
+    .cta a {
+      background-color: var(--accent);
+      color: #0f172a;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background-color: #0ea5e9;
+    }
+
     section {
-      padding: 40px 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+      padding: 60px 20px;
     }
 
     h2 {
-      color: var(--primary);
-      margin-bottom: 20px;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+      color: var(--accent);
     }
 
-    ul {
-      list-style: none;
-      padding-left: 0;
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
     }
 
-    ul li {
+    .feature {
+      background-color: var(--card);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .feature h3 {
       margin-bottom: 10px;
-      padding-left: 24px;
-      position: relative;
+      font-size: 1.2rem;
     }
 
-    ul li::before {
-      content: "✅";
-      position: absolute;
-      left: 0;
-      color: var(--primary);
+    .feature p {
+      color: var(--muted);
+      font-size: 0.95rem;
     }
 
-    a {
-      color: var(--primary);
-      text-decoration: none;
+    .contact p {
+      margin-bottom: 10px;
     }
 
     .btn {
       display: inline-block;
       margin-top: 20px;
       padding: 12px 24px;
-      background-color: var(--primary);
-      color: white;
+      background-color: var(--accent);
+      color: #0f172a;
       text-decoration: none;
       border-radius: 6px;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #005fa3;
+      font-weight: bold;
     }
 
     footer {
       text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9em;
-      color: #777;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      color: var(--muted);
     }
   </style>
 </head>
 <body>
 
+  <nav>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="Christian-Resume.pdf" download>Résumé</a>
+  </nav>
+
   <header>
     <h1>Hi, I’m Christian</h1>
     <p>A remote-first <strong>Tech & Customer Support Specialist</strong> helping SaaS and Web3 teams thrive through clear communication and technical precision.</p>
-    <p><em>Empathetic. Detail-oriented. Ready to support your users — wherever they are.</em></p>
+    <div class="cta">
+      <a href="#contact">Let’s Work Together</a>
+    </div>
   </header>
 
   <section id="skills">
-    <h2>Skills & Tools</h2>
-    <ul>
-      <li>Technical Troubleshooting & Remote Diagnostics</li>
-      <li>Ticketing Systems (Zendesk, Freshdesk, Intercom)</li>
-      <li>Email Infrastructure (DNS, SPF, DKIM, DMARC)</li>
-      <li>Documentation & Knowledge Base Creation</li>
-      <li>Empathetic Client Communication & Resolution</li>
-      <li>Remote-First Support across Multiple Time Zones</li>
-    </ul>
+    <h2>What I Bring to the Table</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>🛠️ Troubleshooting</h3>
+        <p>Diagnosing and resolving technical issues with speed and clarity.</p>
+      </div>
+      <div class="feature">
+        <h3>💬 Support Systems</h3>
+        <p>Experienced with Zendesk, Intercom, Freshdesk, and async workflows.</p>
+      </div>
+      <div class="feature">
+        <h3>📫 Email Infrastructure</h3>
+        <p>DNS, SPF, DKIM, and inbox provisioning for SaaS and Web3 platforms.</p>
+      </div>
+      <div class="feature">
+        <h3>📄 Documentation</h3>
+        <p>Creating clear, user-friendly knowledge bases and SOPs.</p>
+      </div>
+      <div class="feature">
+        <h3>🤝 Communication</h3>
+        <p>Empathetic, client-focused, and always professional.</p>
+      </div>
+      <div class="feature">
+        <h3>🌐 Remote-First</h3>
+        <p>Async-ready and timezone-flexible — built for distributed teams.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Let’s Work Together</h2>
+  <section id="contact" class="contact">
+    <h2>Let’s Connect</h2>
     <p>📩 Open to remote support roles in SaaS, Web3, or early-stage startups.</p>
-    <p>Reach out via 
-      <a href="mailto:your@email.com">Email</a>, 
-      <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>, or 
-      <a href="https://github.com/channie04" target="_blank">GitHub</a>.
-    </p>
+    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
+    <p>GitHub: <a href="https://github.com/channie04" target="_blank">github.com/channie04</a></p>
     <a href="Christian-Resume.pdf" download class="btn">📄 Download My Résumé</a>
   </section>
 
