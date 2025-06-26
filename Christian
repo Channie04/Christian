@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Christian – Tech Support & Customer Support Specialist</title>
+  <style>
+    :root {
+      --primary: #3b82f6;
+      --bg-dark: #0f172a;
+      --bg-light: #f8fafc;
+      --text-light: #f1f5f9;
+      --text-dark: #1e293b;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-light);
+    }
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      background: var(--bg-dark);
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #94a3b8;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .section li {
+      margin-bottom: 10px;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+      color: #94a3b8;
+      background: var(--bg-dark);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Christian</h1>
+  <p>Tech Support | Customer Support | Email Infrastructure</p>
+</header>
+
+<div class="section">
+  <h2>About Me</h2>
+  <p>I’m a remote-first support specialist who thrives at the intersection of technical troubleshooting and human communication. From resolving DNS and inbox issues to guiding clients through complex setups, I turn technical friction into smooth experiences for users and teams alike.</p>
+</div>
+
+<div class="section">
+  <h2>Skills & Tools</h2>
+  <ul>
+    <li>Email Hosting & Deliverability (SPF, DKIM, DMARC, inbox warm-up)</li>
+    <li>Domain & DNS Troubleshooting (Cloudflare, Namecheap, Google Domains)</li>
+    <li>Cold Email Platforms: Instantly, Mailreach, Smartlead</li>
+    <li>Customer Communication & Support Ticketing</li>
+    <li>Remote Collaboration: Slack, Loom, Google Workspace</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Experience</h2>
+  <p><strong>CheapInboxes – Tech Support & Customer Support Specialist</strong><br/>
+  Delivered responsive client support, resolved email deliverability issues, handled domain configurations, and maintained high customer satisfaction across international clients.</p>
+</div>
+
+<div class="section">
+  <h2>Let’s Connect</h2>
+  <p>I'm actively seeking remote roles in email infrastructure support, SaaS technical support, and customer success. Reach out—I'd love to hear how I can help your team thrive.</p>
+  <a href="mailto:youremail@example.com" class="cta">Email Me</a>
+</div>
+
+<footer>
+  &copy; 2025 Christian. Dedicated to clarity, consistency, and human-first tech support.
+</footer>
+
+</body>
+</html>
